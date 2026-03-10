@@ -43,5 +43,27 @@ This repository demonstrates the following SQL skills:
 * Relational joins
 * Analytical queries
 * Window functions
+-- Question 1
+-- Find duplicate emails
 
+SELECT email, COUNT(*) AS duplicate_count
+FROM customers
+GROUP BY email
+HAVING COUNT(*) > 1;
+
+
+-- Question 2
+-- Second highest salary
+
+SELECT MAX(salary)
+FROM employees
+WHERE salary < (SELECT MAX(salary) FROM employees);
+
+
+-- Question 3
+-- Orders not delivered
+
+SELECT *
+FROM orders
+WHERE delivery_date IS NULL;
 
