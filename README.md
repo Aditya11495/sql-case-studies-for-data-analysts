@@ -44,7 +44,4 @@ This repository demonstrates the following SQL skills:
 * Analytical queries
 * Window functions
 
-## Author
 
-Aditya Singh
-Aspiring Data Scientist / Data Analyst
